@@ -1,0 +1,13 @@
+table{
+    border: none;
+}
+table tr td{
+    border: none;
+}
+#blog-Section
+{
+    text-align: center;
+}
+#blog-Section img {
+    padding:20px;
+}

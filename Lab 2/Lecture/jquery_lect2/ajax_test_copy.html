@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+
+<html >
+<head>
+    <title></title>
+    <style>
+
+        
+    </style>
+    <script src="jq/jquery.js"></script>
+   <script>
+var data;
+var jsondata;
+var cds;
+$(function(){
+// $("#b1").click(function(){
+
+// $.ajax({
+
+// url:"cdcatalog.xml",
+// success:  function(response){
+// console.log("sucess");
+// data=response;
+// console.log(data);
+// cds=$(data).find("CD");
+// $("#t1").append("<tr><th>TITLE</th><th>ARTIST</th></tr>");
+// cds.each(function(){
+// var txt=$(this).children("TITLE").text();
+// var Arst=$(this).children("ARTIST").text();
+// $("#t1").append("<tr><td>"+txt+"</td><td>"+Arst+"</td></tr>");
+// })
+
+// },
+// error:function(){
+//     console.log("error");
+// }
+// })
+// })
+
+$("#b3").on("click",function(){
+
+$.ajax({
+
+url:"json.code-workspace",
+success:function(jsondata){
+    console.log("success");
+    $("body").append(jsondata);
+   var newjsondata=JSON.parse(jsondata);
+   console.log(newjsondata);
+for(i=0;i<jsondata.length;i++)
+{
+//the lab is here 
+
+}
+},
+error:function(){
+
+    console.log("error")
+},
+
+
+})
+
+
+
+})
+
+
+
+
+
+
+
+});
+    </script>
+    </head>
+    <body>
+        <a href="content.html"> content data </a>
+<input type="button" id="b1" value="request from xml"/>
+<input type="button" id="b2" value="get content"/>
+<input type="button" id="b3" value="Read Data from JSON"/>
+<div id="content2">
+
+
+
+
+</div>
+CD Titles
+<table id="t1">
+
+
+
+</table>
+
+</body>
+</html>

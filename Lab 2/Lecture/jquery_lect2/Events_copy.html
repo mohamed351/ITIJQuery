@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html >
+<head>
+    <title></title>
+    <style>
+        .active,p {
+            background-color:yellow;
+        }
+        
+        .small{
+            background-color:pink;
+            width:300px;
+            margin:10px;
+        }
+        .error {
+            border : 1px solid red;
+        }
+    </style>
+    <script src="jq/jquery.js"></script>
+
+    <script>
+        $(function(){
+$("div").on("click",function(evt){
+console.log($(this).text());
+$(this).hide(); ///this is the caller element
+evt.stopPropagation();
+})
+$("#cancel").on({
+
+"click":function(){ 
+    $("div").off("click"); 
+                     }
+
+})
+
+        });
+    </script>
+</head>
+<body>
+    <p> Paragraph 1</p>
+    <p> Paragraph 2</p>
+    <p> Paragraph 3</p>
+    <p> Paragraph 4</p>
+    <form id="form1" >
+<!-- <    <div> -->
+        <ul>
+            <!--<li>Bind</li>-->
+            <li>Bind More than one Event to One Fun</li>
+            <li>Bind More than one Event to more Function</li>
+            <li>Passing Event Object</li>
+            <li>UnBind</li>
+            <li>CLick</li>
+        </ul>
+        <select name="Skills" multiple="multiple">
+            <option>JavaScript</option>
+            <option selected="selected">JQuery</option>
+            <option>ASP.net</option>
+            <option selected="selected">CSS</option>
+            <option>HTML5</option>
+            <option>PHP</option>
+       </select>
+       <span></span>
+        <div class="small">
+            Div 1.
+        </div>    
+        <div class="small">
+            Div 2.
+        </div>
+        <div class="small">
+            Div 3.
+        </div>
+        <div class="small">
+            Div 4.
+        </div>
+        <input type="text" value="Enter Your Name" />
+        <input type="button" id="cancel" value="Cancel Click" />
+        <input id="EOW" type="button" value="End Of The World" />
+        <input id="three" type="button" value="3" />
+        <input id="whichkey" type="text" value="" /><span id="log"></span>
+        <p>Click Mee</p>
+        <img src="images/5.jpg" alt="Alternate Text" width="300" height="300" />
+        <table id="dataTable">
+            <tbody>
+                <tr>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="checkbox" checked/>Agree
+        <a href="http://www.google.com">Google</a>
+        <input type="button" id="b1" value="Button 1" />
+        <input type="button" id="b2" value="Button 2" />
+
+    <!-- </div>  -->
+    </form>
+</body>
+</html>
