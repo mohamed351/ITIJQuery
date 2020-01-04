@@ -1,24 +1,24 @@
 [{
                 "url": "http://cz.bfashion.com/na-podpatku/jennika-lodi%C4%8Dky-jennika-3155",
                 "name": "Pumps",
-                "price_formatted": "$295.00",
+                "price_formatted": "$700",
                 "brand": "JENNIKA",
-                "discount_price_formatted": "$119.00",
+                "discount_price_formatted": "$119",
                 "description": "You can add a description of the product to the feed and it will appear exactly here.",
                 "main_image": "http://img.bfashion.com/products/presentation/1023dc979f5e98c34c202a6f82a3af3ab6feeda4.jpg"
             },
             {
                 "url": "http://cz.bfashion.com/bundy/kab%C3%A1t-rip-curl-4028",
                 "name": "Coat Rip Curl",
-                "price_formatted": "$3,500.00",
-                "discount_price_formatted": "$1,549.00",
+                "price_formatted": "$1200",
+                "discount_price_formatted": "$1549",
                 "description": "You can add a description of the product to the feed and it will appear exactly here.",
                 "main_image": "http://img.bfashion.com/products/presentation/52f0ac15efa124aa22593593567a0a410f4f9706.jpg"
             },
             {
                 "url": "http://cz.bfashion.com/bundy/kr%C3%A1tk%C3%A1-kostkovan%C3%A1-d%C3%A1msk%C3%A1-bunda-sarah-4036",
                 "name": "Short plaid jacket ladies Sarah",
-                "price_formatted": "$3,800.00",
+                "price_formatted": "$2500",
                 "discount_price_formatted": "$1,699.00",
                 "description": "You can add a description of the product to the feed and it will appear exactly here.",
                 "main_image": "http://img.bfashion.com/products/presentation/2478725b91a8a21fab6ab87cf12634b3e71a1b75.jpg"
@@ -26,17 +26,17 @@
             {
                 "url": "http://cz.bfashion.com/kozacky/koza%C4%8Dky-megy-bellucci-milano-4465",
                 "name": "Boots Megy",
-                "price_formatted": "$1,295.00",
+                "price_formatted": "$5000",
                 "brand": "BELLUCCI Milano",
-                "discount_price_formatted": "$619.00",
+                "discount_price_formatted": "$250",
                 "description": "You can add a description of the product to the feed and it will appear exactly here.",
                 "main_image": "http://img.bfashion.com/products/presentation/7bc3d7835f1860cb214162d7757790b439e0fc91.jpg"
             },
             {
                 "url": "http://cz.bfashion.com/halenky-s-dlouh%C3%BDm-ruk%C3%A1vem/halenka-jasmin",
                 "name": "Blouse Jasmin",
-                "price_formatted": "$349.00",
-                "discount_price_formatted": "$349.00",
+                "price_formatted": "$200",
+                "discount_price_formatted": "$349",
                 "description": "You can add a description of the product to the feed and it will appear exactly here.",
                 "main_image": "http://img.bfashion.com/products/presentation/565df415973524cd7913b9857846df2117850baf.jpg"
             }]
