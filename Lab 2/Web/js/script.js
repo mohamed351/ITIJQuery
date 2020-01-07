@@ -1,4 +1,5 @@
 var arraydata;
+var xmlElements;
 $(document).ready(function(){
 
    $.ajax({
@@ -10,6 +11,16 @@ $(document).ready(function(){
      
     }
    });
+
+   $.ajax({
+       url:"js/cdcatalog.xml",
+       method:"GET",
+       success:function(result){
+        xmlElements= result;
+        ElementXmlDraw(result);
+        
+       }
+   })
    
    $("#sortElement").on("change",function(){
 
@@ -68,7 +79,7 @@ $(document).ready(function(){
        }
    });
 
-   $("#txt1").on("keypress",function(){
+   $("#txt1").on("keydown",function(){
  
     var txtSearch = $("#txt1").val();
 
@@ -146,4 +157,27 @@ $(document).ready(function(){
       $(".table-data").html(tbl);
 
    }
+   function ElementXmlDraw(result){
+
+     $("#tbody").html("");
+    $(result).find("CATALOG CD").each(function(){
+        $("#tbody").append( 
+            `
+           <tr>
+             <td> ${ $(this).find("TITLE").text()}</td>
+             <td> ${ $(this).find("ARTIST").text()}</td>
+             <td> ${ $(this).find("COUNTRY").text()}</td>
+             <td> ${ $(this).find("COMPANY").text()}</td>
+             <td> ${ $(this).find("PRICE").text()}</td>
+             <td> ${ $(this).find("YEAR").text()}</td>
+           </tr>
+            `
+            );
+     });
+   }
+  
+
+
+
+
 });
